@@ -49,25 +49,27 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function() {
-    $('#panel-1').addClass('opacity');
     setTimeout(() => {
-        $('#panel-2').addClass('opacity');
+        $('#panel-1, #panel-7').addClass('opacity');
     }, 0300);
     setTimeout(() => {
-        $('#panel-3').addClass('opacity');
-    }, 600);
+        $('#panel-2, #panel-6').addClass('opacity');
+    }, 0600);
+    setTimeout(() => {
+        $('#panel-3, #panel-5').addClass('opacity');
+    }, 900);
     setTimeout(() => {
         $('#panel-4').addClass('opacity');
-    }, 900);
-    setTimeout(() => {
-        $('#panel-5').addClass('opacity');
-    }, 0300);
-    setTimeout(() => {
-        $('#panel-6').addClass('opacity');
-    }, 600);
-    setTimeout(() => {
-        $('#panel-7').addClass('opacity');
-    }, 900);
+    }, 1200);
+    // setTimeout(() => {
+    //     $('#panel-5').addClass('opacity');
+    // }, 0300);
+    // setTimeout(() => {
+    //     $('#panel-6').addClass('opacity');
+    // }, 600);
+    // setTimeout(() => {
+    //     $('#panel-7').addClass('opacity');
+    // }, 900);
 });
 
 // expand panel
